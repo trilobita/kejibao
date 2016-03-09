@@ -54,8 +54,8 @@
     _titleLabel.font = [UIFont boldSystemFontOfSize:13.0f];
     [self addSubview:_titleLabel];
     
-    _mediaNameLabel                 = [[UILabel alloc] initWithFrame:CGRectZero];
-    _mediaNameLabel.font            = [UIFont systemFontOfSize:11.0f];
+    _mediaNameLabel           = [[UILabel alloc] initWithFrame:CGRectZero];
+    _mediaNameLabel.font      = [UIFont systemFontOfSize:11.0f];
     _mediaNameLabel.textColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1];
     [self addSubview:_mediaNameLabel];
     

@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "31DD82D32E396092803993F4554459BA397BD172",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++4837" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "31DD82D32E396092803993F4554459BA397BD172" : 0,
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++4837" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1173B983-B4D1-4949-BC5F-058213E0E557",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "31DD82D32E396092803993F4554459BA397BD172" : "kejibao\/",
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++4837" : "kejibao\/kejibao\/AFNetworking\/Cache\/MD5\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "kejibao",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "kejibao\/kejibao.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:trilobita\/kejibao.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31DD82D32E396092803993F4554459BA397BD172"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.88.8\/qfproj",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d3b33442-203a-4b98-a023-85834f8d8bd5++4837"
+    }
+  ]
+}

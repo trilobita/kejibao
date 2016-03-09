@@ -108,7 +108,9 @@
         
     } else {
         //如果移除的是最后一个并且已经被算中的操作方式
-        if ( (manger.index) == [manger.selectedSubscribeArray indexOfObject:_tempModel] ) {
+        if ( (manger.index) >= [manger.selectedSubscribeArray indexOfObject:_tempModel] ) {
+            //即将被删掉的的不是当前选中的，当前选中的是最后一个
+            //即将被删掉的是最后一个并且当前选中
             manger.index--;
         }
         
