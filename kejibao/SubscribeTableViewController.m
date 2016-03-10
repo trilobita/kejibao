@@ -20,11 +20,14 @@
     NSString *_finalUrl;
     SubscribeManger *_manger;
     NSMutableArray *_dataArray;
+    UIImageView *_noDataShowImage;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.tableView reloadData];
+    [self emptyData];
+    
 }
 
 - (void)viewDidLoad {
@@ -79,6 +82,7 @@
             
             [self.tableView reloadData];
         }
+        
     }];
     
 }
@@ -88,18 +92,32 @@
     
 }
 
-//订阅页面为空显示背景图片    未完成
+//订阅页面为空显示背景图片    半完成
 - (void)emptyData {
-    if (_isAdd) {
-        if ([self.url isEqualToString:@"media/index"] && !_manger.mediaSubscribeArray.count) {
-            
-        } else if(!_manger.topicSubscribeArray.count) {
-            
+    
+    _noDataShowImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    UIImage *image;
+    
+    if (_isAdd && !_dataArray.count) {
+        if ([_url isEqualToString:@"media/index"]) {
+            image = [UIImage imageNamed:@"over_media"];
+        } else {
+            image = [UIImage imageNamed:@"over_theme"];
         }
-    } else if(!(_manger.selectedSubscribeArray.count-1)) {
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"no_more_order"]];
-        [self.view addSubview:imageView];
+    } else if (!(_manger.selectedSubscribeArray.count-1) && !_isAdd) {
+        image = [UIImage imageNamed:@"no_more_order"];
+    } else {
+        image = nil;
     }
+    if (image) {
+        [_noDataShowImage setImage:image];
+        self.tableView.backgroundView = _noDataShowImage;
+        self.tableView.scrollEnabled  = NO;
+    } else {
+        self.tableView.scrollEnabled =YES;
+        self.tableView.backgroundView = nil;
+    }
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
